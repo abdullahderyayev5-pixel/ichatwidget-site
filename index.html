@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iChatWidget</title>
+    <style>
+        :root {
+            --primary: #0070f3;
+            --primary-hover: #0051bb;
+            --bg: #ffffff;
+            --text: #111111;
+            --text-muted: #666666;
+            --card-bg: #fafafa;
+            --border: #eaeaea;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border);
+            max-width: 1000px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        .logo {
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--text);
+            text-decoration: none;
+        }
+        main {
+            flex: 1;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 5rem 2rem;
+            width: 100%;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+        }
+        p {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+        }
+        .btn {
+            display: inline-block;
+            background-color: var(--text);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.2s;
+        }
+        .btn:hover {
+            background-color: var(--primary-hover);
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">iChatWidget</a>
+    </header>
+
+    <main>
+        <h1>24/7 AI Chat Assistant</h1>
+        <p>Add an AI chat assistant to your website with a single script tag.</p>
+        <a href="#" class="btn">Get Started</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 iChatWidget. All rights reserved.</p>
+    </footer>
+
+    <!-- Chat Widget Script -->
+    <script src="https://chatbotwidgethq.github.io/i-chat-widget/widget.js" data-client-id="cd0e221e-a90f-48c4-ab41-36d33bd56104" async></script>
+</body>
+</html>
